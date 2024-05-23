@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { ResizableBox } from "react-resizable";
 import "react-resizable/css/styles.css";
 import { v4 as uuidv4 } from "uuid";
@@ -19,30 +19,24 @@ const Partition = ({ partition, onSplit, onRemove }) => {
 
   return (
     <ResizableBox
-      className="relative border"
-      width={200}
-      height={200}
+      className="relative outline"
+      width={300}
+      height={300}
       minConstraints={[100, 100]}
       maxConstraints={[Infinity, Infinity]}
     >
       <div className="w-full h-full" style={{ backgroundColor: color }}>
-        <div className="absolute top-2 left-2 flex space-x-2">
-          <button
-            onClick={() => onSplit(id, "V")}
-          >
-            V
-          </button>
-          <button
-            onClick={() => onSplit(id, "H")}
-          >
-            H
-          </button>
-          <button
-            onClick={() => onRemove(id)}
-            className="rounded-full bg-red-500 text-white w-6 h-6 flex items-center justify-center"
-          >
-            X
-          </button>
+        <div className="absolute top-2 left-2">
+          <div className=" flex flex-wrap space-x-2">
+            <button onClick={() => onSplit(id, "V")}>V</button>
+            <button onClick={() => onSplit(id, "H")}>H</button>
+            <button
+              onClick={() => onRemove(id)}
+              className="rounded-full bg-white text-red-500 p-0 size-7 flex items-center justify-center"
+            >
+              X
+            </button>
+          </div>
         </div>
         <div
           className={`flex ${

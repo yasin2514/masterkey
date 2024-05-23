@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
-      <section className=" max-w-screen-xl mx-auto my-16 w-full ">
+      <section className=" max-w-screen-xl mx-auto py-16 w-full ">
         <Outlet />
       </section>
       <footer className="mt-auto">
