@@ -13,7 +13,7 @@ const Navbar = () => {
         to={"/alphabet"}
         className={({ isActive }) => isActive ? "text-red-500":"text-white"}
       >
-        Recursive-partitioning
+        Alphabet-Tile-Interaction
       </NavLink>
     </div>
   );

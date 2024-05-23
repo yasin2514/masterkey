@@ -1,6 +1,11 @@
+import React from 'react';
 
 const Recursive = () => {
-    return <div>Recursive</div>;
+    return (
+        <div>
+            
+        </div>
+    );
 };
 
 export default Recursive;
