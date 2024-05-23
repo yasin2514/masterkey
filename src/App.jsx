@@ -5,8 +5,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      yyyy
-      <Outlet />
+      <section className="border max-w-screen-xl mx-auto py-5">
+        <Outlet />
+      </section>
     </div>
   );
 };
