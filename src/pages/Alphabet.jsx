@@ -20,7 +20,6 @@ const Alphabet = () => {
       <div className="grid grid-cols-5 gap-x-4  w-[60%]">
         {alphabet?.map((letter, index) => (
           <div
-            y
             key={index}
             className="flex text-xl font-semibold justify-center items-center h-16 bg-gray-200 border border-gray-300 cursor-pointer hover:bg-gray-300 rounded-md user-select-none"
             onClick={() => handleClick(letter)}
